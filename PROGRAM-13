@@ -1,0 +1,50 @@
+// program of multilevel inheritance.
+#include <iostream>
+using namespace std;
+class a
+{
+       public:
+           int a1;
+            void getdata()
+          {
+              cout<<"enter the value of first number"<<endl;
+	         cin>>a1;	
+	        }	
+};
+class b:public a   
+
+{
+ public:
+ int b2;
+ void putdata()
+     {
+     cout<<"enter the value of second number"<<endl;
+	 cin>>b2;	
+	 }	
+ };
+class c: public b
+{
+ public:
+ int c3;
+ int p;
+ void check()
+     {
+     cout<<"enter the value of third number"<<endl;
+	 cin>>c3;	
+	 }
+     void addition()
+    {
+    p=a1+b2+c3;
+    cout<<"product of three number is:"<<p;	 
+    }
+};
+int main()
+{
+c A1;
+A1.getdata();
+A1.putdata();
+A1.check();
+A1.addition();
+}
+
+
