@@ -1,0 +1,27 @@
+// program of Multiple inheritance.
+#include <iostream>
+using namespace std;
+class students
+{
+ public:
+    students()
+    {
+	cout<<"there are 40 students"<<endl;	
+    }
+};
+class teacher
+{
+public:
+     teacher()
+	{
+	 cout<< "total 7 teacher";
+    } 
+};
+class dept:public students,public teacher
+{
+};
+int main()
+{
+ dept d1;	
+ return 0;	
+}
